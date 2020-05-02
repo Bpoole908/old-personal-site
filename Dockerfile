@@ -17,10 +17,12 @@ WORKDIR /home/$HOST_USER/website
 
 COPY --chown=$HOST_USER ./website ./website
 
-run npm install \ 
+run npm update \ 
     && npm install -g gulp-cli
 
 USER $HOST_USER
+
+RUN echo 'export PS1="🐳 \[\033[1;36m\]\u@\[\033[1;32m\]\h:\[\033[1;34m\]\w\[\033[0m\]\$ "' >> $HOME/.bashrc
 
 CMD npm start
 
