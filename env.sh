@@ -7,7 +7,7 @@ alias web-make="docker run \
 -p 3000:3000 \
 -p 3001:3001 \
 --name bs4-website \
-website:latest"
+bpoole908/website:latest"
 
 alias web-attach="docker run \
 --rm \
@@ -16,7 +16,7 @@ alias web-attach="docker run \
 -p 3000:3000 \
 -p 3001:3001 \
 --name bs4-website \
-website:latest \
+bpoole908/website:latest \
 bash \
 && docker attach bs4-website"
 
