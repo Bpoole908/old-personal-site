@@ -11,13 +11,11 @@ RUN groupadd -r $HOST_USER \
     && mkdir /home/$HOST_USER/website/ \
     && chown $HOST_USER:$HOST_GID /home/$HOST_USER/website/
 
-
-
 WORKDIR /home/$HOST_USER/website
 
 COPY --chown=$HOST_USER ./website ./website
 
-run npm update \ 
+RUN npm update -g \ 
     && npm install -g gulp-cli
 
 USER $HOST_USER
