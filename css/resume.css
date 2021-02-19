@@ -32,30 +32,19 @@ h6 {
 h1 {
   font-size: 6rem;
   line-height: 5.5rem;
-  margin-right: 500px;
-  margin-left: 500px;
 }
 
 h2 {
   font-size: 3.5rem;
-  margin-right: 500px;
-  margin-left: 500px;
 }
 
 h3 {
   font-size: 2rem;
-  margin-right: 500px;
-  margin-left: 500px;
 }
 
 p.lead {
   font-size: 1.25rem;
   font-weight: 500;
-}
-
-p {
-    margin-right: 500px;
-    margin-left: 500px;
 }
 
 ul {
